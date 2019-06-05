@@ -1,0 +1,4 @@
+pillow
+pyocr
+ipython
+notebook
