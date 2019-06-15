@@ -1,4 +1,3 @@
-from .extract import extract_text
-from .process import bounding_box
+from .main import OCR
 
-__all__ = ['extract_text', 'bounding_box']
+__all__ = ['OCR']
