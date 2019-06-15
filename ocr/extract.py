@@ -2,9 +2,7 @@ from re              import sub
 from PIL             import Image
 from pyocr.tesseract import image_to_string
 
-class ExtractImageInfo(object):
-    def __init__(self, image):
-        self.image = image
+class ExtractImageInfo:
 
     def extract_text(self, is_captcha=False):
         image = (self.image if not isinstance(self.image, str) else Image.open(self.image)).convert('L')

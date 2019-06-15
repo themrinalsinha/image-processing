@@ -1,8 +1,6 @@
 from PIL import ImageDraw
 
-class ProcessImageData(object):
-    def __init__(self, image):
-        self.image = image
+class ProcessImageData:
 
     def bounding_box(self, mark_image=False):
         pixel_data    = self.image.load()
